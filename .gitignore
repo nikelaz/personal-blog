@@ -30,3 +30,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# build styles
+styles/global.css
