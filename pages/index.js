@@ -1,11 +1,10 @@
-import NavFooterTemplate from '../templates/nav-footer';
+import HeaderFooterTemplate from '../templates/header-footer';
 
 const Home = () => (
-  <NavFooterTemplate>
+  <HeaderFooterTemplate>
     <section>
-      <p>Hello world!</p>
     </section>
-  </NavFooterTemplate>
+  </HeaderFooterTemplate>
 );
 
 export default Home;

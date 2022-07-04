@@ -1,9 +1,19 @@
 import React from 'react';
-import './nav.module.css';
+import styles from './nav.module.css';
 
 const Nav = () => (
-  <nav>
-    <div>Nikola Lazarov</div>
+  <nav className={styles.Nav}>
+    <ul>
+      <li>
+        <a href="#">Publications</a>
+      </li>
+      <li>
+        <a href="#">Resume</a>
+      </li>
+      <li>
+        <a href="#">Contact me</a>
+      </li>
+    </ul>
   </nav>
 );
 

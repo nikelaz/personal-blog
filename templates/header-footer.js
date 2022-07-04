@@ -1,13 +1,11 @@
 import React from 'react';
 import EmptyTemplate from './empty';
-import Nav from '../components/nav/nav';
+import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 
-const NavFooterTemplate = ({ children }) => (
+const HeaderFooterTemplate = ({ children }) => (
   <EmptyTemplate>
-    <header>
-      <Nav />
-    </header>
+    <Header />
 
     <main>
       { children }
@@ -17,4 +15,4 @@ const NavFooterTemplate = ({ children }) => (
   </EmptyTemplate>
 );
 
-export default NavFooterTemplate;
+export default HeaderFooterTemplate;
