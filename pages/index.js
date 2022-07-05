@@ -32,8 +32,10 @@ const Home = ({ publications }) => (
             <p className="h3">I write about Software Engineering <br />and Web</p>
           </div>
 
-          <div className="Row">
-            { publications.slice(0, 3).map(publication => <FeaturedItem publication={publication} />)}
+          <div className={styles.FeaturedArticles}>
+            <div className="Row">
+              { publications.slice(0, 3).map((publication, index) => <FeaturedItem publication={publication} key={index} />)}
+            </div>
           </div>
         </div>
       </div>

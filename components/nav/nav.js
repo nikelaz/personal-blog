@@ -10,7 +10,7 @@ const Nav = () => (
         <NavItem href="/publications">Publications</NavItem>
       </li>
       <li>
-        <NavItem href="#">Contact me</NavItem>
+        <NavItem href="mailto:nikola.n.lazarov@outlook.com">Contact me</NavItem>
       </li>
     </InlineList>
   </nav>

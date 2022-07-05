@@ -14,7 +14,7 @@ const Publications = ({ publications }) => (
       <div className="Container">
         <div className="Row">
           <div className="Col Col--9">
-            { publications.map(publication => <Publication publication={publication} />) }
+            { publications.map((publication, index) => <Publication publication={publication} key={index} />) }
           </div>
         </div>
       </div>
