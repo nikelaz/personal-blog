@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderFooterTemplate from '../templates/header-footer';
 import FeaturedArticle from '../components/featured-article/featured-article';
+import fetchPublications from '../helpers/fetch-publications';
 import styles from './index.module.css';
 
 const Home = ({ publications }) => (
@@ -51,13 +52,8 @@ const FeaturedItem = ({ publication }) => (
   </div>
 );
 
-import fsPromises from 'fs/promises';
-import path from 'path';
-
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'data/publications.json');
-  const data = await fsPromises.readFile(filePath);
-  const publications = JSON.parse(data);
+  const publications = await fetchPublications();
 
   return {
     props: { publications }

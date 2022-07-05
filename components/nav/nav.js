@@ -7,7 +7,7 @@ const Nav = () => (
   <nav className={styles.Nav}>
     <InlineList>
       <li>
-        <NavItem href="#">Publications</NavItem>
+        <NavItem href="/publications">Publications</NavItem>
       </li>
       <li>
         <NavItem href="#">Contact me</NavItem>

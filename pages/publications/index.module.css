@@ -1,0 +1,17 @@
+.Hero {
+  background-color: #f2f2f2;
+}
+
+.Publication {
+  margin-bottom: 40px;
+}
+
+.PublicationLink {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.Publication hr {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
