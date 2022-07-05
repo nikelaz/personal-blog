@@ -1,0 +1,15 @@
+.InlineList {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.InlineList > li {
+  display: inline-block;
+}
+
+.InlineList > li:not(:first-of-type) {
+  margin-left: 30px;
+}

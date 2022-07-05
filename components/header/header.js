@@ -1,16 +1,20 @@
 import React from 'react';
 import styles from './header.module.css';
 import Nav from '../nav/nav';
+import SocialNav from '../social-nav/social-nav';
 
-const Header = () => (
-  <header className={styles.Header}>
+const Header = ({ isAbsolute }) => (
+  <header className={`${styles.Header} ${isAbsolute ? styles.Absolute : ''}`}>
     <div className="Container">
-      <div className="Row">
-        <div className="Col Col--5">
-          <div className={styles.Logo}>Nikola Lazarov</div>
+      <div className="Row Row--middle">
+        <div className="Col Col--4">
+          <a href="/" className={styles.Logo}>Nikola Lazarov</a>
         </div>
-        <div className="Col Col--7">
+        <div className="Col Col--4">
           <Nav />
+        </div>
+        <div className="Col Col--4">
+          <SocialNav />
         </div>
       </div>
     </div>

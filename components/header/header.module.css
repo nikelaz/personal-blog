@@ -1,6 +1,9 @@
 .Header {
+  display: flex;
+  align-items: center;
   height: 50px;
-  line-height: 50px;
+  position: relative;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
 }
@@ -10,4 +13,11 @@
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: #fff;
+}
+
+.Absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }

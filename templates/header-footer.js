@@ -3,9 +3,9 @@ import EmptyTemplate from './empty';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 
-const HeaderFooterTemplate = ({ children }) => (
+const HeaderFooterTemplate = ({ children, absoluteHeader }) => (
   <EmptyTemplate>
-    <Header />
+    <Header isAbsolute={absoluteHeader} />
 
     <main>
       { children }
