@@ -6,7 +6,7 @@
     "dev": "next dev",
     "prebuild": "npm run build:styles",
     "build:styles": "stylus ./styles/global.styl",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },

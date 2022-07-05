@@ -44,7 +44,7 @@ const Home = ({ publications }) => (
 );
 
 const FeaturedItem = ({ publication }) => (
-  <div className="Col Col--4">
+  <div className="Col Col--4 Col--l">
     <FeaturedArticle
       link={publication.link}
       target={publication.target}
