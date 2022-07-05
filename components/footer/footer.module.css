@@ -1,0 +1,14 @@
+.FooterWrap {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  margin-top: auto;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.FooterWrap p {
+  margin: 0;
+}

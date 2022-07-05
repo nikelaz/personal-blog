@@ -1,8 +1,11 @@
 import React from 'react';
-import './footer.module.css';
+import styles from './footer.module.css';
 
 const Footer = () => (
-  <footer>
+  <footer className={styles.FooterWrap}>
+    <div className="Container">
+      <p>&copy; 2022 Nikola Lazarov</p>
+    </div>
   </footer>
 );
 
