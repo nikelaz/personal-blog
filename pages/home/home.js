@@ -32,21 +32,27 @@ const Home = () => (
           </div>
 
           <div className="Row">
-            <div className="Col Col--6">
+            <div className="Col Col--4">
               <FeaturedArticle
                 link="https://medium.com/@nikola.n.lazarov/data-structure-design-implementation-and-applications-linked-lists-9568485b4936"
                 target="_blank"
-                image="/articles/featured-image.png"
-                label="Featured Article"
+                label="Data Structures"
                 title="Data Structure Design, Implementation and Applications: Linked Lists"
               />
             </div>
-            <div className="Col Col--6">
+            <div className="Col Col--4">
               <FeaturedArticle
                 link="https://medium.com/@nikola.n.lazarov/data-structure-design-implementation-and-applications-linked-lists-9568485b4936"
                 target="_blank"
-                image="/articles/featured-image.png"
-                label="Featured Article"
+                label="Data Structures"
+                title="Data Structure Design, Implementation and Applications: Linked Lists"
+              />
+            </div>
+            <div className="Col Col--4">
+              <FeaturedArticle
+                link="https://medium.com/@nikola.n.lazarov/data-structure-design-implementation-and-applications-linked-lists-9568485b4936"
+                target="_blank"
+                label="Data Structures"
                 title="Data Structure Design, Implementation and Applications: Linked Lists"
               />
             </div>
