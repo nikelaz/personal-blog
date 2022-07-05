@@ -1,0 +1,50 @@
+.FeaturedArticle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.13);
+}
+
+.FeaturedArticleImage {
+  position: relative;
+  flex: 1.5;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.FeaturedArticleImage img {
+  object-fit: cover;
+}
+
+.FeaturedArticleContent {
+  flex: 2.5;
+  padding: 30px;
+  text-align: left;
+}
+
+.FeaturedArticleTitle {
+  display: block;
+  line-height: 1.2;
+}
+
+.FeaturedArticleTitle:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.FeaturedArticleLabel {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+}

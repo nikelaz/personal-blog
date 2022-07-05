@@ -1,37 +1,33 @@
 .Hero {
   position: relative;
   text-align: center;
-  min-height: 600px;
-  overflow: hidden;
   color: #fff;
 }
 
-.Blob {
-  position: relative;
-}
-
 .HeroContent {
-  position: absolute;
-  top: calc(50% - 50px);
-  left: 50%;
-  width: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  min-height: 850px;
+  padding: 50px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-/* .HeroBg {
+.HeroContent svg {
   position: absolute;
   top: 0;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 1620px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 50px);
   z-index: -1;
 }
 
-.HeroBg svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-} */
+.FeaturedArticles {
+  margin-top: -300px;
+}
+
+.BlobContent {
+  width: 45%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
