@@ -9,18 +9,6 @@ const nextConfig = {
 
     return config;
   },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/home/home',
-        permanent: true,
-      },
-    ]
-  },
-  images: {
-    domains: [ 'miro.medium.com' ],
-  },
 }
 
 module.exports = nextConfig

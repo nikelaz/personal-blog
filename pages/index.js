@@ -1,7 +1,7 @@
 import React from 'react';
-import HeaderFooterTemplate from '../../templates/header-footer';
-import FeaturedArticle from '../../components/featured-article/featured-article';
-import styles from './home.module.css';
+import HeaderFooterTemplate from '../templates/header-footer';
+import FeaturedArticle from '../components/featured-article/featured-article';
+import styles from './index.module.css';
 
 const Home = () => (
   <HeaderFooterTemplate absoluteHeader={true}>
