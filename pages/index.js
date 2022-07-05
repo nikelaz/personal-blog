@@ -3,7 +3,7 @@ import HeaderFooterTemplate from '../templates/header-footer';
 import FeaturedArticle from '../components/featured-article/featured-article';
 import styles from './index.module.css';
 
-const Home = () => (
+const Home = ({ publications }) => (
   <HeaderFooterTemplate absoluteHeader={true}>
     <section className={styles.Hero}>
       <div className="Container">
@@ -32,35 +32,36 @@ const Home = () => (
           </div>
 
           <div className="Row">
-            <div className="Col Col--4">
-              <FeaturedArticle
-                link="https://medium.com/@nikola.n.lazarov/data-structure-design-implementation-and-applications-linked-lists-9568485b4936"
-                target="_blank"
-                label="Data Structures"
-                title="Data Structure Design, Implementation and Applications: Linked Lists"
-              />
-            </div>
-            <div className="Col Col--4">
-              <FeaturedArticle
-                link="https://medium.com/@nikola.n.lazarov/data-structure-design-implementation-and-applications-linked-lists-9568485b4936"
-                target="_blank"
-                label="Data Structures"
-                title="Data Structure Design, Implementation and Applications: Linked Lists"
-              />
-            </div>
-            <div className="Col Col--4">
-              <FeaturedArticle
-                link="https://medium.com/@nikola.n.lazarov/data-structure-design-implementation-and-applications-linked-lists-9568485b4936"
-                target="_blank"
-                label="Data Structures"
-                title="Data Structure Design, Implementation and Applications: Linked Lists"
-              />
-            </div>
+            { publications.slice(0, 3).map(publication => <FeaturedItem publication={publication} />)}
           </div>
         </div>
       </div>
     </section>
   </HeaderFooterTemplate>
 );
+
+const FeaturedItem = ({ publication }) => (
+  <div className="Col Col--4">
+    <FeaturedArticle
+      link={publication.link}
+      target={publication.target}
+      label={publication.tag}
+      title={publication.title}
+    />
+  </div>
+);
+
+import fsPromises from 'fs/promises';
+import path from 'path';
+
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'data/publications.json');
+  const data = await fsPromises.readFile(filePath);
+  const publications = JSON.parse(data);
+
+  return {
+    props: { publications }
+  }
+}
 
 export default Home;
