@@ -5,7 +5,7 @@ import styles from './nav.module.css';
 
 const Nav = () => (
   <nav className={styles.Nav}>
-    <InlineList>
+    <InlineList breakpoint="s">
       <li>
         <NavItem href="/publications">Publications</NavItem>
       </li>
