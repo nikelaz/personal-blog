@@ -46,3 +46,17 @@
     padding-bottom: 20px;
   }
 }
+
+@media screen and (max-width: 590px) {
+  .BlobContent h1 {
+    font-size: 34px;
+  }
+
+  .BlobContent p {
+    font-size: 21px !important;
+  }
+
+  .BlobContent br {
+    display: none;
+  }
+}
